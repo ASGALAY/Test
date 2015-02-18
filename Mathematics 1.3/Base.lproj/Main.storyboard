@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oDB-C4-mox">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="Mathematics_1_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Математика" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaY-iO-0BU">
+                                <rect key="frame" x="202" y="135" width="196.5" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGf-Qe-jsk">
+                                <rect key="frame" x="235" y="446" width="131" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Начнём!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wLo-rf-COU" kind="show" id="4NA-1D-sIn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fGf-Qe-jsk" firstAttribute="centerX" secondItem="FaY-iO-0BU" secondAttribute="centerX" id="5P9-Yv-2A3"/>
+                            <constraint firstItem="fGf-Qe-jsk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L24-Jy-ook"/>
+                            <constraint firstItem="FaY-iO-0BU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="71" id="Q9F-mf-2Ih"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fGf-Qe-jsk" secondAttribute="bottom" constant="100" id="eKp-dA-PYj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0e9-fb-4iV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1168" y="-205"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7TA-j4-eNd">
+            <objects>
+                <viewController id="wLo-rf-COU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jD9-rg-5WN"/>
+                        <viewControllerLayoutGuide type="bottom" id="r8L-zA-Xmk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rCf-8A-Z0L">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeQ-9w-bC6">
+                                <rect key="frame" x="207" y="107" width="186" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Сложение">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6M-hp-ZyL">
+                                <rect key="frame" x="207" y="169" width="186" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Вычитание">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHl-s7-0ss">
+                                <rect key="frame" x="207" y="231" width="186" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Умножение">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7z-wI-l24">
+                                <rect key="frame" x="207" y="293" width="186" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Деление">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WeQ-9w-bC6" firstAttribute="leading" secondItem="KHl-s7-0ss" secondAttribute="leading" id="3vC-tI-GPh"/>
+                            <constraint firstItem="WeQ-9w-bC6" firstAttribute="leading" secondItem="K7z-wI-l24" secondAttribute="leading" id="7XF-8D-ja1"/>
+                            <constraint firstItem="K7z-wI-l24" firstAttribute="top" secondItem="KHl-s7-0ss" secondAttribute="bottom" constant="8" symbolic="YES" id="Rxq-k9-Rdy"/>
+                            <constraint firstItem="KHl-s7-0ss" firstAttribute="top" secondItem="c6M-hp-ZyL" secondAttribute="bottom" constant="8" id="Y0z-Lg-Wya"/>
+                            <constraint firstItem="WeQ-9w-bC6" firstAttribute="leading" secondItem="c6M-hp-ZyL" secondAttribute="leading" id="bj9-3I-Uyz"/>
+                            <constraint firstItem="WeQ-9w-bC6" firstAttribute="trailing" secondItem="KHl-s7-0ss" secondAttribute="trailing" id="fdQ-CK-OXb"/>
+                            <constraint firstItem="c6M-hp-ZyL" firstAttribute="top" secondItem="WeQ-9w-bC6" secondAttribute="bottom" constant="8" symbolic="YES" id="h49-gO-KdZ"/>
+                            <constraint firstItem="WeQ-9w-bC6" firstAttribute="top" secondItem="jD9-rg-5WN" secondAttribute="bottom" constant="43" id="hZS-J9-w0L"/>
+                            <constraint firstItem="WeQ-9w-bC6" firstAttribute="trailing" secondItem="K7z-wI-l24" secondAttribute="trailing" id="jci-WJ-Nw1"/>
+                            <constraint firstItem="WeQ-9w-bC6" firstAttribute="trailing" secondItem="c6M-hp-ZyL" secondAttribute="trailing" id="mQT-3e-ELJ"/>
+                            <constraint firstItem="WeQ-9w-bC6" firstAttribute="centerX" secondItem="rCf-8A-Z0L" secondAttribute="centerX" id="ooh-PQ-qkC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TfN-zy-4X1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qrz-x4-ixT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="-205"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Whm-lc-NPN">
+            <objects>
+                <navigationController id="oDB-C4-mox" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cro-r7-J3P">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="amx-ek-oL6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PC0-xV-97S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="-147"/>
+        </scene>
+    </scenes>
+</document>
